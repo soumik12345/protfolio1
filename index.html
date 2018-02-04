@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en" >
+	<head>
+		<meta charset="UTF-8">
+		<title>Soumik Rakshit</title>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,300,700|Vollkorn:400italic,400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+		<style>
+			.position-title {
+				font-size: 1.25em;
+				font-family: "Vollkorn", serif;
+				margin: 10px 0 5px 0;
+				border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+			}
+
+			.languages-list,
+			.tools-list {
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex;
+				-ms-flex-wrap: wrap;
+						flex-wrap: wrap;
+				-webkit-box-pack: justify;
+						-ms-flex-pack: justify;
+								justify-content: space-between;
+				width: 100%;
+			}
+
+			.school-location,
+			.school-dates,
+			.state-abbr, .organization-dates, .camp-dates {
+				margin-left: 5px;
+				font-style: italic;
+			}
+
+			.school-score {
+				margin-left: 5px;
+			}
+
+			* {
+				-webkit-box-sizing: border-box;
+								box-sizing: border-box;
+			}
+
+			html {
+				font-size: 16px;
+			}
+
+			a {
+				text-decoration: none;
+				color: #555;
+				-webkit-transition: 0.3s ease;
+				transition: 0.3s ease;
+			}
+			a:hover {
+				color: #CC00CC;
+			}
+
+			article {
+				line-height: 1.5;
+				padding-bottom: 200px;
+				color: #333;
+			}
+
+			header {
+				text-align: center;
+				background: rgba(204, 204, 204, 0.8);
+				padding: 50px 0;
+			}
+			header h1 {
+				font-family: "Vollkorn", serif;
+				font-size: 3em;
+			}
+			header h2 {
+				font-family: "Open Sans", sans-serif;
+				font-style: italic;
+				font-size: 1.5em;
+				padding: 0 20px;
+			}
+
+			.resume-image {
+				border-radius: 50%;
+				max-width: 150px;
+				margin-bottom: 30px;
+			}
+
+			.contact-info {
+				font-family: "Open Sans", sans-serif;
+				margin-top: 20px;
+			}
+
+			.phone-number,
+			.email-address {
+				display: block;
+				margin-bottom: 5px;
+			}
+
+			.icon {
+				margin: 0 5px;
+			}
+
+			section {
+				width: 100%;
+				max-width: 960px;
+				margin: 0 auto;
+				padding: 20px;
+				font-family: "Open Sans", sans-serif;
+				-webkit-box-sizing: border-box;
+								box-sizing: border-box;
+			}
+			section:first-of-type {
+				margin-top: 30px;
+			}
+			section h1 {
+				font-size: 2rem;
+				padding-bottom: 5px;
+				border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+				margin-bottom: 20px;
+				font-family: "Vollkorn", serif;
+				color: #333;
+			}
+			@media (max-width: 900px) {
+				section h1 {
+					text-align: center;
+				}
+			}
+			section h2 {
+				font-size: 1.5rem;
+				font-family: "Vollkorn", serif;
+				color: #444;
+				display: inline-block;
+			}
+			@media (max-width: 900px) {
+				section h2 {
+					text-align: center;
+					display: block;
+				}
+			}
+
+			.education-section-heading {
+				margin-right: 10px;
+			}
+
+			.address-container {
+				display: inline-block;
+			}
+
+			.school-name-location-date-container {
+				display: inline-block;
+			}
+			@media (max-width: 900px) {
+				.school-name-location-date-container {
+					display: block;
+					text-align: center;
+					margin-bottom: 10px;
+				}
+			}
+
+			@media (max-width: 600px) {
+				.languages-list,
+				.tools-list {
+					-ms-flex-wrap: wrap;
+							flex-wrap: wrap;
+				}
+			}
+			.languages-list > li,
+			.tools-list > li {
+				-webkit-box-flex: 1;
+						-ms-flex-positive: 1;
+								flex-grow: 1;
+			}
+			@media (max-width: 900px) {
+				.languages-list > li,
+				.tools-list > li {
+					width: 45%;
+					margin-bottom: 20px;
+				}
+			}
+
+			.secondary-languages-list,
+			.secondary-tools-list {
+				color: #555;
+			}
+			.secondary-languages-list li,
+			.secondary-tools-list li {
+				margin-left: 10px;
+			}
+			@media (max-width: 900px) {
+				.secondary-languages-list li,
+				.secondary-tools-list li {
+					margin-left: 0;
+					text-align: center;
+				}
+			}
+
+			.work-experience-list li {
+				width: 100%;
+				padding: 0 10px;
+				margin-bottom: 30px;
+			}
+
+			.secondary-work-experience-list > li {
+				padding: 5px 0;
+				margin-left: 10px;
+			}
+
+			.tertiary-work-experience-list {
+				list-style: square;
+				margin-left: 15px;
+			}
+			.tertiary-work-experience-list > li {
+				margin: 0 0 5px 10px;
+			}
+
+			.organization-name {
+				display: inline-block;
+			}
+
+			.organization-link:hover {
+				color: #888;
+				text-shadow: none;
+			}
+
+			.camps-conferences-container {
+				margin-bottom: 15px;
+			}
+			.camps-conferences-container p {
+				margin-left: 5px;
+			}
+			@media (max-width: 900px) {
+				.camps-conferences-container p {
+					text-align: center;
+				}
+			}
+
+			@media (max-width: 900px) {
+				.camp-dates {
+					display: block;
+					text-align: center;
+				}
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="resume-container">
+			<article>
+				<header role="banner">
+					<!-- <img itemprop="image" src="{{ personInfo.img }}" alt="{{ personInfo.name }}" title="{{ personInfo.name }}" class="resume-image" /> -->
+					<h1>Soumik Rakshit</h1>
+					<h2>Full Stack Web Developer with a passion for Machine Learning</h2>
+					<address class="contact-info">
+						<a href="tel:9748989782" target="_blank" class="phone-number">+91 9748989782</a>
+					<a href="mailto:19soumik.rakshit96@gmail.com" target="_blank" class="email-address">19soumik.rakshit96@gmail.com</a>
+					<a href="https://github.com/soumik12345" target="_blank" class="icon"><i class="fa fa-github fa-lg"></i></a>
+					<a href="https://www.linkedin.com/in/soumik-rakshit-54324712a" target="_blank" class="icon"><i class="fa fa-linkedin fa-lg"></i></a>
+					</address>
+				</header>
+				<section class="education-section">
+					<h1>Education</h1>
+					<ul>
+					<li>
+						<h2>B.Tech Computer Science and Engineering</h2>
+						<div class="school-name-location-date-container">
+							<span>Kalinga Institute of Industrial Technology</span>
+							<div class="address-container">
+								<span class="school-location">Bhubaneshwar, Odisha, India</span>
+							</div>
+							<div class="school-score">CGPA(3rd Semester): 8.48</div>
+							<div class="school-dates">(2016-2020)</div>
+						</div>
+					</li>
+					<li>
+							<h2>CBSE 12th Grade</h2>
+							<div class="school-name-location-date-container">
+								<span>Kalinga Institute of Industrial Technology</span>
+								<div class="address-container">
+									<span class="school-location">Bhubaneshwar, Odisha, India</span>
+								</div>
+								<div class="school-score">CGPA(3rd Semester): 8.48</div>
+								<div class="school-dates">(2016-2020)</div>
+							</div>
+						</li>
+					</ul>
+				</section>
+				<section class="languages-section">
+					<h1>Skills</h1>
+					<ul class="languages-list">
+					
+					<li class="language-tool-column">
+							<h2 class="language-name">JavaScript</h2>
+							<ul class="secondary-languages-list">
+							<li>Node.js</li>
+							<li>Express</li>
+							<li>Mongoose</li>
+							<li>EJS</li>
+							<li>p5.js</li>
+							</ul>
+					</li>
+					<li class="language-tool-column">
+							<h2 class="language-name">Python</h2>
+							<ul class="secondary-languages-list">
+							<li>Scikit-learn</li>
+							<li>OpenCV</li>
+							<li>Anaconda</li>
+							<li>Spyder</li>
+							<li>Jupyter</li>
+							</ul>
+						</li>
+					
+					<li class="language-tool-column">
+							<h2 class="language-name">Java</h2>
+							<ul class="secondary-languages-list">
+							<li>Java 8</li>
+							<li>Eclipse Oxygen EE</li>
+							<li>BlueJ</li>
+							<li>Processing</li>
+							</ul>
+						</li>
+						<li class="language-tool-column">
+								<h2 class="language-name">C++</h2>
+								<ul class="secondary-languages-list">
+								<li>C (gcc 5.4.0)</li>
+								<li>C++ (g++ 5.4.0)</li>
+								<li>C++14</li>
+								</ul>
+							</li>
+					<li class="language-tool-column">
+						<h2 class="language-name">Others</h2>
+						<ul class="secondary-languages-list">
+							<li>MySQL</li>
+							<li>MongoDB</li>
+							<li>Unity3D(C#)</li>
+							<li>Wordpress</li>
+							<li>HTML</li>
+							<li>CSS</li>
+						</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="experience-section">
+					<h1>Work Experience</h1>
+					<ul class="work-experience-list">
+					<li>
+						<div class="organization-heading">
+						<a href="https://www.facebook.com/koderunners/" target="_blank">
+							<h2 class="organization-name">Koderunners</h2></a>
+						</div>
+						<span class="organization-dates">Feb 2017 - Present</span>
+						<div>
+						<h3 class="position-title">Instructor and Back End Developer</h3>
+						<ul class="tertiary-work-experience-list">
+							<li>Responsible for developing the back end of the upcoming Koderunners website.</li>
+							<li>Instructor in various student workshops organised by Koderunners.</li>
+						</ul>
+						</div>
+					</li>
+					<li>
+						<div class="organization-heading">
+							<h2 class="organization-name">KIIT Student Satellite</h2>
+						</div>
+						<span class="organization-dates">Sept 2017 - Present</span>
+						<div>
+							<h3 class="position-title">Research Programmer</h3>
+							<ul class="tertiary-work-experience-list">
+							<li>Responsible for developing the computer on-board the satellite.</li>
+							<li>Responsible for developing the algorithms for analysing the hyperspectral image data to be gathered by the satellite.</li>
+							</ul>
+						</div>
+						</li>
+					</ul>
+				</section>
+				<section class="camps-conferences-section">
+					<h1>Projects</h1>
+					<div class="camps-conferences-container">
+					<a href="https://www.dropbox.com/s/yop9g7ampjqlnss/Hackathon.rar?dl=0" target="_blank">
+						<h2 class="camp-name">Maze of Facts</h2>
+					</a>
+					<span class="camp-dates">Nov 2016 - Dec 2016</span>
+						<p class="camp-description">Co-created a game in Unity3d(C#) aimed at children of age 5-11 years for Mozilla Helloweb Hackathon 2016, KIIT University.</p>
+						<p class="camp-description"><a href="https://www.dropbox.com/s/yop9g7ampjqlnss/Hackathon.rar?dl=0">Project Link</a></p>
+					</div>
+					<div class="camps-conferences-container">
+						<a href="https://github.com/soumik12345/3d-Terrain" target="_blank">
+							<h2 class="camp-name">3d Terrain genaration</h2>
+						</a>
+						<span class="camp-dates">Feb 2017 - May 2017</span>
+						<p class="camp-description">Generated a random 3d terrain using the Perlin noise algorithm and created a version which simulates a Minecraft type cube based terrain using both Processing java and p5.js framework of javascript.</p>
+						<p class="camp-description"><a href="https://github.com/soumik12345/3d-Terrain">Project Link</a></p>
+					</div>
+					<div class="camps-conferences-container">
+						<a href="https://github.com/soumik12345/Face-Detector" target="_blank">
+							<h2 class="camp-name">Facial Features Detector</h2>
+						</a>
+						<span class="camp-dates">Sept 2017</span>
+						<p class="camp-description">A simple Face Detector in Python-Opencv that detects the face, eyes and lips.</p>
+						<p class="camp-description"><a href="https://github.com/soumik12345/Face-Detector">Project Link</a></p>
+					</div>
+					<div class="camps-conferences-container">
+						<a href="https://github.com/soumik12345/sample-cms" target="_blank">
+							<h2 class="camp-name">Content Management System</h2>
+						</a>
+						<span class="camp-dates">Dec 2017 - Present</span>
+						<p class="camp-description">A content management system using Nodejs, Express and MongoDB that allows the user to manipulate the contents of a webpage without have to resort the coding for all the contents.</p>
+						<p class="camp-description"><a href="https://github.com/soumik12345/sample-cms">Project Link</a></p>
+					</div>
+					<div class="camps-conferences-container">
+						<a href="https://github.com/soumik12345/Self-Driving-Car" target="_blank">
+							<h2 class="camp-name">Self Driving Car</h2>
+						</a>
+						<span class="camp-dates">Dec 2017 - Present</span>
+						<p class="camp-description">An algorithm which will be able to drive a car in a simulated photorealistic roadlike environment. The algorithm can be tested in environments like Udacity Self Driving Car Simulator, GTA V and Project Cars.</p>
+						<p class="camp-description"><a href="https://github.com/soumik12345/Self-Driving-Car">Project Link</a></p>
+					</div>
+				</section>
+				<section class="camps-conferences-section">
+						<h1>Publications</h1>
+						<div class="camps-conferences-container">
+						<a href="http://www.geeksforgeeks.org/creative-programming-processing-set-1-random-walker/" target="_blank">
+							<h2 class="camp-name">Creative Programming In Processing | Set 1 (Random Walker)</h2>
+						</a>
+						<span class="camp-dates">Published by Geeksforgeeks</span>
+						<p class="camp-description">Introduction to creative programming using the Processing language.</p>
+						<p class="camp-description"><a href="http://www.geeksforgeeks.org/creative-programming-processing-set-1-random-walker/">Article Link</a></p>	
+					</div>
+						<div class="camps-conferences-container">
+						<a href="http://www.geeksforgeeks.org/using-vectors-processing-langauage/" target="_blank">
+							<h2 class="camp-name">Using Vectors in Processing Language</h2>
+						</a>
+						<span class="camp-dates">Published by Geeksforgeeks</span>
+						<p class="camp-description">Introduction to the use of vectors in Processing language.</p>
+						<p class="camp-description"><a href="http://www.geeksforgeeks.org/using-vectors-processing-langauage/">Article Link</a></p>
+						</div>
+						<div class="camps-conferences-container">
+						<a href="http://www.geeksforgeeks.org/creative-programming-processing-set-2-lorenz-attractor/" target="_blank">
+							<h2 class="camp-name">Creative Programming In Processing | Set 2 (Lorenz Attractor)</h2>
+						</a>
+						<span class="camp-dates">Published by Geeksforgeeks</span>
+						<p class="camp-description">Displaying the plot of Lorenz attractor(a set of differential equations governing the behavior of convection currents in the upper atmosphere) using Processing.</p>
+						<p class="camp-description"><a href="http://www.geeksforgeeks.org/creative-programming-processing-set-2-lorenz-attractor/">Article Link</a></p>	
+						</div>
+						<div class="camps-conferences-container">
+						<a href="http://www.geeksforgeeks.org/brainfuck-interpreter-java/" target="_blank">
+							<h2 class="camp-name">BrainFuck Interpreter in Java</h2>
+						</a>
+						<span class="camp-dates">Published by Geeksforgeeks</span>
+						<p class="camp-description">Creating a simple interpreter for the esoteric language BrainFuck in Java which accepts the BrainFuck code as input and produces the output.</p>
+						<p class="camp-description"><a href="http://www.geeksforgeeks.org/brainfuck-interpreter-java/">Article Link</a></p>		
+					</div>
+					</section>
+					<section class="camps-conferences-section">
+							<h1>Interests</h1>
+							<div class="camps-conferences-container">
+							<ul class="tertiary-work-experience-list">
+								<li>Creative Programming.</li>
+								<li>Competitive Programming.</li>
+								<li>Artificial Intelligence.</li>
+								<li>Back End Development.</li>
+								<li>Machine Learning.</li>
+								<li>Computer Vision.</li>
+							</ul>
+							</div>
+					</section>
+					<section class="camps-conferences-section">
+							<h1>Achievements</h1>
+							<div class="camps-conferences-container">
+							<ul class="tertiary-work-experience-list">
+								<li>HackerEarth Week Leader in the Maths LeaderBoard in the 2nd week of April, 2017.</li>
+								<li>Reached the 3rd position on HackerEarth Basic Programming LeaderBoard.</li>
+								<li>World Rank 340 in ProjectEuler+ on HackerRank.</li>
+							</ul>
+							</div>
+					</section>
+					<section class="camps-conferences-section">
+							<h1>Developer Profiles</h1>
+							<div class="camps-conferences-container">
+							<ul class="tertiary-work-experience-list">
+								<li><a href="https://www.hackerearth.com/@19soumik.rakshit96">HackerEarth</a></li>
+								<li><a href="https://www.hackerrank.com/19soumikrakshi96">HackerRank</a></li>
+								<li><a href="http://www.spoj.com/users/soumikrakshit/">SPOJ</a></li>
+								<li><a href="https://www.hackerrank.com/results/projecteuler/19soumikrakshi96">ProjectEuler+</a></li>
+							</ul>
+							</div>
+					</section>
+			</article>
+		</div>
+	</body>
+</html>
